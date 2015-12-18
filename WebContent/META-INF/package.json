@@ -1,0 +1,8 @@
+{
+ "name": "Bluemix Sample - Twitter Influence Analyzer DAO",
+ "version": "1.0.0",
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/ibmecod/bluemix-java-sample-tia-alldbs.git"
+ }
+}

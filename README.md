@@ -1,9 +1,9 @@
 # Twitter influence analyzer dao sample app
 
-##How to get this running using cf
+## How to get this running using cf ##
 1. From the command line, log into Bluemix. 
 ``` cf login ```
-2. Create a Bluemix SQL DB service as named in the twitter_influence_analyzer_dao/manifest.yml file.
+2. Create a Bluemix SQL DB service as named in the manifest.yml file.
 ```cf cs sqldb sqldb_free sample-tia-sqldb```
 3. Download the Project Zip from this github repository, extract the zip, and change the names of the application and services in the manifest.yml file to the names you will be using...
 ```---
@@ -21,8 +21,11 @@ applications:
    - sample-tia-sqldb
 ```
 
-4. Change directories to the twitter_influence_analyzer_dao folder and push the app with the ```cf push``` command.
+4. Navigate to the unzip directory from step 3 using the command line and push the app with the ```cf push``` command.
 
+## One click deployment ##
+You can deploy this applications directly to your bluemix by clicking this deployment button.
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibmecod/bluemix-java-sample-tia-alldbs.git)
 
 # Privacy Notice
 
