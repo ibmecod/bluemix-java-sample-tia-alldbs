@@ -6,7 +6,7 @@
 	<property name="debuglevel" value="source,lines,vars"/>
 	<property name="target" value="1.7"/>
 	<property name="source" value="1.7"/>
-	<condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}/output/" else="./output/">
+	<condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else="./output/">
 		<isset property="env.ARCHIVE_DIR" />
 	</condition>
 	<property name="warname" value= "bluemix-tia-sample.war"/>
