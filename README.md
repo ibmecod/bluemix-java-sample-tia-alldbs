@@ -14,8 +14,9 @@ declared-services:
 applications:
 - name: twitter_influence_analyzer_dao
   memory: 512M
-  host: twitter_influence_analyzer_dao_${random-word}
-  path: output/bluemix-tia-sample.war
+  instances: 1
+  host: twitter_influence_analyzer_dao
+  path: bluemix-tia-sample.war
   domain: mybluemix.net
   services:
    - sample-tia-sqldb
