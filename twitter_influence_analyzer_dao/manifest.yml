@@ -1,11 +1,13 @@
+---
+declared-services:
+  sample-tia-sqldb:
+    label: sqldb
+    plan: sqldb_free
 applications:
 - name: twitter_influence_analyzer_dao
   memory: 512M
-  host: twitter_influence_analyzer_dao
-  domain: ng.bluemix.net
+  host: twitter_influence_analyzer_dao_${random-word}
+  path: output/bluemix-tia-sample.war
+  domain: mybluemix.net
   services:
-    SQLDB-pf42a:
-      label: SQLDB
-      version: '1.0'
-      plan: SQLDB_OpenBeta
-      provider: IM
+   - sample-tia-sqldb
